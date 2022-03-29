@@ -18,9 +18,9 @@ npm install
 
 ## RTC RTM APPID and TOKEN
 
-step1- Enter src/stores/counter.js
-step2- Make account on agora and get APPID and TOKEN for RTC
-step3- Enter src/views/chattingBody.vue
+step1- Enter src/stores/counter.js <br />
+step2- Make account on agora and get APPID and TOKEN for RTC <br />
+step3- Enter src/views/chattingBody.vue <br />
 step4- Get APPID and TOKEN for RTM
 
 ## note
