@@ -16,11 +16,15 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 npm install
 ```
 
+## RTC RTM APPID and TOKEN
+
 step1- Enter src/stores/counter.js
 step2- Make account on agora and get APPID and TOKEN for RTC
 step3- Enter src/views/chattingBody.vue
 step4- Get APPID and TOKEN for RTM
-**note**
+
+## note
+
 = The RTM TOKEN is permanent but RTC TOKEN should update it everyday.
 
 ### Compile and Hot-Reload for Development
