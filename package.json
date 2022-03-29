@@ -1,0 +1,44 @@
+{
+  "name": "agora-app",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 5050",
+    "test:unit": "vitest --environment jsdom",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@popperjs/core": "^2.11.0",
+    "agora-rtc-sdk": "^3.6.9",
+    "agora-rtc-sdk-ng": "^4.9.3",
+    "agora-rtm-sdk": "^1.4.4",
+    "bootstrap": "^5.1.3",
+    "bootstrap-vue": "^2.21.2",
+    "core-js": "^3.6.5",
+    "firebase": "^9.6.9",
+    "jquery": "^3.6.0",
+    "normalize.css": "^8.0.1",
+    "pinia": "^2.0.12",
+    "popper.js": "^1.16.1",
+    "vue": "^3.2.31",
+    "vue-router": "^4.0.12"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.1.0",
+    "@vitejs/plugin-vue": "^2.2.2",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "@vue/test-utils": "^2.0.0-rc.18",
+    "eslint": "^8.5.0",
+    "eslint-plugin-vue": "^8.2.0",
+    "jsdom": "^19.0.0",
+    "prettier": "^2.5.1",
+    "sass": "^1.49.9",
+    "sass-loader": "^8.0.2",
+    "vite": "^2.8.4",
+    "vitest": "^0.5.0"
+  }
+}

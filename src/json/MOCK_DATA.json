@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "first_name": "Jone",
+    "last_name": "Mackleden",
+    "email": "jmackleden0@ocn.ne.jp",
+    "gender": "Male",
+    "star": "5252",
+    "online": false,
+    "friend": false
+  },
+  {
+    "id": 2,
+    "first_name": "Marsiella",
+    "last_name": "Figura",
+    "email": "mfigura1@purevolume.com",
+    "gender": "Female",
+    "star": "8549",
+    "online": false,
+    "friend": false
+  },
+  {
+    "id": 3,
+    "first_name": "Cherey",
+    "last_name": "Jenks",
+    "email": "cjenks2@nymag.com",
+    "gender": "Female",
+    "star": "8433",
+    "online": false,
+    "friend": false
+  },
+  {
+    "id": 4,
+    "first_name": "Sloane",
+    "last_name": "Matyashev",
+    "email": "smatyashev3@princeton.edu",
+    "gender": "Female",
+    "star": "1860",
+    "online": true,
+    "friend": true
+  },
+  {
+    "id": 5,
+    "first_name": "Daune",
+    "last_name": "von Nassau",
+    "email": "dvonnassau4@stanford.edu",
+    "gender": "Male",
+    "star": "313",
+    "online": true,
+    "friend": true
+  },
+  {
+    "id": 6,
+    "first_name": "Whitman",
+    "last_name": "Sandcraft",
+    "email": "wsandcraft5@netvibes.com",
+    "gender": "Male",
+    "star": "622",
+    "online": true,
+    "friend": false
+  },
+  {
+    "id": 7,
+    "first_name": "Alayne",
+    "last_name": "Songer",
+    "email": "asonger6@plala.or.jp",
+    "gender": "Male",
+    "star": "381",
+    "online": true,
+    "friend": false
+  },
+  {
+    "id": 8,
+    "first_name": "Fayina",
+    "last_name": "Packwood",
+    "email": "fpackwood7@plala.or.jp",
+    "gender": "Male",
+    "star": "61",
+    "online": true,
+    "friend": false
+  },
+  {
+    "id": 9,
+    "first_name": "Austina",
+    "last_name": "Scherer",
+    "email": "ascherer8@woothemes.com",
+    "gender": "Male",
+    "star": "04",
+    "online": true,
+    "friend": false
+  },
+  {
+    "id": 10,
+    "first_name": "Meridel",
+    "last_name": "Klos",
+    "email": "mklos9@freewebs.com",
+    "gender": "Female",
+    "star": "4788",
+    "online": false,
+    "friend": false
+  },
+  {
+    "id": 11,
+    "first_name": "Lib",
+    "last_name": "Coffee",
+    "email": "lcoffeea@cargocollective.com",
+    "gender": "Female",
+    "star": "8845",
+    "online": false,
+    "friend": true
+  },
+  {
+    "id": 12,
+    "first_name": "Kathy",
+    "last_name": "Geere",
+    "email": "kgeereb@geocities.jp",
+    "gender": "Bigender",
+    "star": "8",
+    "online": true,
+    "friend": true
+  },
+  {
+    "id": 13,
+    "first_name": "Ettore",
+    "last_name": "Karpe",
+    "email": "ekarpec@hexun.com",
+    "gender": "Female",
+    "star": "2341",
+    "online": true,
+    "friend": true
+  },
+  {
+    "id": 14,
+    "first_name": "Faydra",
+    "last_name": "Guion",
+    "email": "fguiond@nyu.edu",
+    "gender": "Female",
+    "star": "9",
+    "online": true,
+    "friend": false
+  },
+  {
+    "id": 15,
+    "first_name": "Natala",
+    "last_name": "Reynolds",
+    "email": "nreynoldse@google.es",
+    "gender": "Female",
+    "star": "5",
+    "online": true,
+    "friend": false
+  },
+  {
+    "id": 16,
+    "first_name": "Deeyn",
+    "last_name": "Nowell",
+    "email": "dnowellf@flavors.me",
+    "gender": "Agender",
+    "star": "284",
+    "online": false,
+    "friend": false
+  },
+  {
+    "id": 17,
+    "first_name": "Shauna",
+    "last_name": "Dalston",
+    "email": "sdalstong@fotki.com",
+    "gender": "Polygender",
+    "star": "4",
+    "online": true,
+    "friend": false
+  },
+  {
+    "id": 18,
+    "first_name": "Aurelea",
+    "last_name": "Atthowe",
+    "email": "aatthoweh@amazon.co.jp",
+    "gender": "Female",
+    "star": "49",
+    "online": false,
+    "friend": true
+  },
+  {
+    "id": 19,
+    "first_name": "Anthia",
+    "last_name": "Doram",
+    "email": "adorami@ovh.net",
+    "gender": "Genderqueer",
+    "star": "6247",
+    "online": true,
+    "friend": true
+  },
+  {
+    "id": 20,
+    "first_name": "Abigale",
+    "last_name": "Lesek",
+    "email": "alesekj@vkontakte.ru",
+    "gender": "Male",
+    "star": "7447",
+    "online": true,
+    "friend": false
+  }
+]
