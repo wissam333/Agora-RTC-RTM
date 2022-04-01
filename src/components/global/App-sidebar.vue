@@ -73,7 +73,7 @@ export default {
     justify-content: space-around;
     bottom: 0;
     z-index: 2;
-    background-color: #d5d5d5;
+    background-color: #283046;
   }
   .left-side {
     overflow-y: auto;

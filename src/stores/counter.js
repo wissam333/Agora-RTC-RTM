@@ -6,13 +6,13 @@ export const useCounterStore = defineStore({
   id: "counter",
   state: () => ({
     search: "",
-    // you should add your appId here from agora.io after making account
+    // you should add your appId here from agora.io after making an account
     appId: "f58c8e903d44449bb38abb1776060cd6",
     // generate rtc token after naming your channel
     channel: "main",
     // the token :>
     token:
-      "006f58c8e903d44449bb38abb1776060cd6IADBUmCc3zEJ+BsbyD5Hxt/xuB5u2NuoKTCbMyLCOWuWTGTNKL8AAAAAEADnfDPKnm4zYgEAAQCcbjNi",
+      "006f58c8e903d44449bb38abb1776060cd6IABZNmWLaQqG5VprnFRlyEuLDkr3A8bzK8bymE4CFdWf32TNKL8AAAAAEABrDG+dpgVIYgEAAQCmBUhi",
     // for audio and video paths
     remoteTracks: {},
     localTracks: [],
