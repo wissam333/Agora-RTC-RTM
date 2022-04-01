@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 import home from "../views/Home.vue";
 import star from "../views/SuperStar.vue";
 import video from "../views/Video.vue";
@@ -8,7 +8,7 @@ import Global from "../views/Global.vue";
 import ChattingBody from "../views/ChattingBody.vue";
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: "/",
