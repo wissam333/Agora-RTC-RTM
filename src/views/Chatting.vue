@@ -44,12 +44,17 @@ export default {
 <style lang="scss" scoped>
 .chatting {
   .chat-users {
-    width: 96.5%;
-    height: 600px;
+    width: 95.5%;
+    height: 630px;
     margin: auto;
+    margin-top: 2rem;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 0.25rem;
     overflow-y: scroll;
+    @media (max-width: 991px) {
+      width: 100%;
+      margin-top: 0;
+    }
     /* Scrollbar Styling */
     &::-webkit-scrollbar {
       width: 8px;
@@ -62,6 +67,7 @@ export default {
       -webkit-border-radius: 15px;
       border-radius: 15px;
       background: #283046;
+      border: 1px solid #242832;
     }
 
     .user {

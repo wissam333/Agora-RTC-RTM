@@ -1,10 +1,10 @@
 <template>
   <div id="app">
+    <Header></Header>
     <div class="right-left-sidebar col-md-0">
       <Sidebar></Sidebar>
     </div>
-    <div class="home-header">
-      <Header></Header>
+    <div class="home">
       <router-view />
     </div>
   </div>
@@ -36,6 +36,9 @@ export default {
   overflow-x: hidden;
   height: 100vh;
   width: 100vw;
+  @media (max-width: 991px) {
+    flex-direction: column-reverse;
+  }
   /* Scrollbar Styling */
   &::-webkit-scrollbar {
     width: 10px;
@@ -69,10 +72,11 @@ export default {
     width: 10%;
   }
   @media (max-width: 991px) {
-    width: 0;
+    width: 100%;
+    height: 8%;
   }
 }
-.home-header {
+.home {
   width: 80%;
   margin-bottom: 80px;
   display: flex;
@@ -82,6 +86,9 @@ export default {
   }
   @media (max-width: 991px) {
     width: 100%;
+    height: 92%;
+    margin-bottom: 0;
+    overflow-y: scroll;
   }
 }
 </style>

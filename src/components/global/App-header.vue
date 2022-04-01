@@ -35,6 +35,8 @@ export default {
 </script>
 <style lang="scss">
 .header {
+  display: none;
+  position: fixed;
   width: 96.5%;
   max-height: 57px;
   padding: 6px 17px;
@@ -42,6 +44,7 @@ export default {
   background-color: #283046;
   border-radius: 0.25rem;
   border: 1px solid #3b4253;
+  z-index: 5;
   ul {
     display: flex;
     align-items: center;

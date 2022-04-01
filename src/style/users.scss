@@ -4,7 +4,7 @@
   justify-content: space-around;
   .card {
     position: relative;
-    width: 200px;
+    width: 210px;
     height: 275px;
     background-color: #283046;
     border: 1px solid #3b4253;
@@ -12,8 +12,11 @@
     @media (max-width: 556px) {
       width: 145px;
       height: 150px;
+      background-color: transparent;
+      border: transparent;
     }
     .cardBody {
+      width: 100%;
       .desc {
         color: #fff;
         @media (max-width: 556px) {
@@ -33,6 +36,9 @@
       margin: 30px auto 0px auto;
       @media (max-width: 556px) {
         margin: 0;
+        overflow: hidden;
+        border-radius: 9.25px;
+        opacity: 0.4;
       }
       img {
         width: 100px;
@@ -41,7 +47,6 @@
         @media (max-width: 556px) {
           width: 100%;
           height: 104%;
-          border-radius: 0.25rem;
         }
       }
       .online {

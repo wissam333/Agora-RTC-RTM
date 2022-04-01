@@ -69,6 +69,9 @@ export default {
   display: flex;
   justify-content: flex-start;
   @media (max-width: 991px) {
+    position: relative;
+  }
+  @media (max-width: 991px) {
     width: 100%;
     justify-content: space-around;
     bottom: 0;
@@ -108,7 +111,7 @@ export default {
         display: flex;
         align-items: center;
         flex-direction: column;
-        padding: 12px 20px;
+        padding: 10px 20px;
         margin: 30px 0;
         text-decoration: none;
         cursor: pointer;

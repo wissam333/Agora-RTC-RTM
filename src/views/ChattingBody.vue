@@ -1,19 +1,17 @@
 <template>
   <div class="chattingBody">
     <div class="chat">
+      <h3 class="friend-name">{{ first_name }}</h3>
       <div class="person">
         <form id="loginForm">
-          <div class="col" style="min-width: 433px; max-width: 443px">
-            <div class="card" style="margin-top: 0px; margin-bottom: 0px">
-              <div
-                class="row card-content"
-                style="margin-bottom: 0px; margin-top: 10px"
-              >
+          <div>
+            <div class="login" style="margin-top: 0px; margin-bottom: 0px">
+              <div class="content" style="margin-bottom: 0px; margin-top: 10px">
                 <div class="input-field">
                   <label>User ID</label>
                   <input type="text" placeholder="User ID" id="userID" />
                 </div>
-                <div class="row">
+                <div>
                   <div>
                     <button @click="login()" type="button" id="login">
                       LOGIN
@@ -32,20 +30,21 @@
       </div>
     </div>
     <div class="input-field channel-padding">
-      <input
-        class="message"
-        type="text"
-        placeholder="peer message"
-        id="peerMessage"
-      />
-      <button
-        class="sendMessage btn btn-success"
-        @click="send_peer_message()"
-        type="button"
-        id="send_peer_message"
-      >
-        SEND
-      </button>
+      <form action="">
+        <input
+          class="message"
+          type="text"
+          placeholder="peer message"
+          id="peerMessage"
+        />
+        <input
+          class="sendMessage btn btn-success"
+          @click="send_peer_message()"
+          type="button"
+          id="send_peer_message"
+          value="SEND"
+        />
+      </form>
     </div>
   </div>
 </template>
@@ -124,8 +123,8 @@ export default {
   margin: 1% auto 1% auto;
   width: 100%;
   .chat {
-    width: 96.5%;
-    height: 600px;
+    width: 94.5%;
+    height: 550px;
     margin: auto;
     background-color: #242b3d;
     border: 1px solid rgb(0, 0, 0);
@@ -144,7 +143,9 @@ export default {
       border-radius: 15px;
       background: #283046;
     }
-
+    .person {
+      float: left;
+    }
     .log {
       color: #fff;
       width: 90%;
@@ -162,12 +163,10 @@ export default {
     }
   }
   .message {
-    width: 90%;
     padding: 8px;
     border-radius: 0.25rem;
   }
   .sendMessage {
-    width: 6.5%;
   }
 }
 </style>
