@@ -12,7 +12,7 @@ export const useCounterStore = defineStore({
     channel: "main",
     // the token :>
     token:
-      "006f58c8e903d44449bb38abb1776060cd6IABZNmWLaQqG5VprnFRlyEuLDkr3A8bzK8bymE4CFdWf32TNKL8AAAAAEABrDG+dpgVIYgEAAQCmBUhi",
+      "006f58c8e903d44449bb38abb1776060cd6IAA1/iwaeeLzSLqqPnpy6tRCLeJTqBk+IM5f4RaxF7yAXWTNKL8AAAAAEADJZeRXc29JYgEAAQB0b0li",
     // for audio and video paths
     remoteTracks: {},
     localTracks: [],
