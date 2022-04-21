@@ -56,17 +56,12 @@
 </template>
 <script>
 import AgoraRTM from "agora-rtm-sdk";
-
 let options = {
   uid: "",
-  token: "",
+  token: "d460c130220e4941a265909240fe0088",
 };
-
 // appid from agora.io
-const appID = "5aead9c470a1420e8d56fc675afb260b";
-// Your rtm token
-options.token = "5aead9c470a1420e8d56fc675afb260b";
-
+const appID = "d460c130220e4941a265909240fe0088";
 const client = AgoraRTM.createInstance(appID);
 // Display Message From Peer
 client.on("MessageFromPeer", function (message) {
@@ -82,7 +77,6 @@ client.on("MessageFromPeer", function (message) {
 client.on("ConnectionStateChanged", function (state, reason) {
   console.log("State changed To: " + state + " Reason: " + reason);
 });
-
 export default {
   name: "ChattingBody",
   props: ["first_name"],
@@ -99,13 +93,11 @@ export default {
     logout: async function () {
       await client.logout();
     },
-
     send_peer_message: async function () {
       //the 3 main variables
       let peerId = this.first_name;
       let peerMessage = document.getElementById("peerMessage").value.toString();
       let userID = document.getElementById("userID").value.toString();
-
       await client
         .sendMessageToPeer({ text: peerMessage }, peerId)
         .then((sendResult) => {
@@ -190,7 +182,6 @@ export default {
               justify-content: center;
               align-items: center;
             }
-
             .message__spacer {
               flex: 1;
             }

@@ -40,7 +40,7 @@
 <script>
 import json from "../json/MOCK_DATA";
 import { mapActions, mapState } from "pinia";
-import { useCounterStore } from "../stores/counter";
+import { RTC } from "../stores/counter";
 
 export default {
   name: "home",
@@ -53,10 +53,10 @@ export default {
     //  this.$root.$refs.home = this;
   },
   methods: {
-    ...mapActions(useCounterStore, ["createStreams", "channelName"]),
+    ...mapActions(RTC, ["createStreams", "channelName"]),
   },
   computed: {
-    ...mapState(useCounterStore, ["search"]),
+    ...mapState(RTC, ["search"]),
     filterdUsers: function () {
       return this.users.filter((user) => {
         return (

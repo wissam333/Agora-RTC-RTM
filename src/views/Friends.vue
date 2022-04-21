@@ -39,7 +39,7 @@
 <script>
 import json from "../json/MOCK_DATA";
 import { mapActions } from "pinia";
-import { useCounterStore } from "../stores/counter";
+import { RTC } from "../stores/counter";
 
 export default {
   name: "friends",
@@ -49,7 +49,7 @@ export default {
     };
   },
   methods: {
-    ...mapActions(useCounterStore, ["createStreams", "channelName"]),
+    ...mapActions(RTC, ["createStreams", "channelName"]),
   },
   computed: {
     filterdUsers: function () {

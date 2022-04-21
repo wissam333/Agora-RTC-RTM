@@ -6,7 +6,7 @@
 <script>
 import videochat from "../components/VideoChat.vue";
 import { mapActions } from "pinia";
-import { useCounterStore } from "../stores/counter";
+import { RTC } from "../stores/counter";
 
 export default {
   name: "videos",
@@ -17,7 +17,7 @@ export default {
     };
   },
   methods: {
-    ...mapActions(useCounterStore, ["leaveAndRemoveLocalStream"]),
+    ...mapActions(RTC, ["leaveAndRemoveLocalStream"]),
   },
   components: {
     videochat,

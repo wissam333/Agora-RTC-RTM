@@ -6,6 +6,9 @@ import Friends from "../views/Friends.vue";
 import chatting from "../views/Chatting.vue";
 import Global from "../views/Global.vue";
 import ChattingBody from "../views/ChattingBody.vue";
+import login from "../views/Login.vue";
+
+import { auth } from "../firebase";
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -45,6 +48,11 @@ const router = createRouter({
       path: "/global",
       name: "global",
       component: Global,
+    },
+    {
+      path: "/login",
+      name: "login",
+      component: login,
     },
   ],
 });

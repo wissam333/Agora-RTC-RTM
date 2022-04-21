@@ -22,13 +22,13 @@
 </template>
 <script>
 import { mapState } from "pinia";
-import { useCounterStore } from "../../stores/counter";
+import { RTC } from "../../stores/counter";
 
 export default {
   name: "Header",
   data: function () {
     return {
-      ...mapState(useCounterStore, ["search"]),
+      ...mapState(RTC, ["search"]),
     };
   },
 };

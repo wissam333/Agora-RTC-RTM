@@ -16,13 +16,13 @@
 </template>
 <script>
 import { mapActions } from "pinia";
-import { useCounterStore } from "../stores/counter";
+import { RTC } from "../stores/counter";
 
 export default {
   name: "videochat",
   props: ["timer"],
   methods: {
-    ...mapActions(useCounterStore, [
+    ...mapActions(RTC, [
       "leaveAndRemoveLocalStream",
       "toggleCamera",
       "toggleMic",

@@ -48,7 +48,7 @@
 </template>
 <script>
 import { mapActions } from "pinia";
-import { useCounterStore } from "../../stores/counter";
+import { RTC } from "../../stores/counter";
 
 export default {
   name: "Sidebar",
@@ -58,7 +58,7 @@ export default {
     };
   },
   methods: {
-    ...mapActions(useCounterStore, ["createStreams"]),
+    ...mapActions(RTC, ["createStreams"]),
   },
 };
 </script>
