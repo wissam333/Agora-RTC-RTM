@@ -1,18 +1,10 @@
 import { defineStore } from "pinia";
-//firebase
-import { auth } from "../firebase";
-import {
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-  signOut,
-} from "firebase/auth";
-//agora
 import AgoraRTC from "agora-rtc-sdk-ng";
-import { useRouter } from "vue-router";
+let client = AgoraRTC.createClient({ mode: "rtc", codec: "vp8" });
+
 export const RTC = defineStore({
   id: "RTC",
   state: () => ({
-    RTCclient: AgoraRTC.createClient({ mode: "rtc", codec: "vp8" }),
     search: "",
     // you should add your appId here from agora.io after making an account
     appId: "f58c8e903d44449bb38abb1776060cd6",
@@ -39,7 +31,7 @@ export const RTC = defineStore({
     },
     async handleUserJoined(user, mediaType) {
       this.remoteTracks[user.uid] = user;
-      await this.RTCclient.subscribe(user, mediaType);
+      await client.subscribe(user, mediaType);
 
       if (mediaType === "video") {
         let player = document.getElementById(`user-container-${user.uid}`);
@@ -69,21 +61,18 @@ export const RTC = defineStore({
     // the main fuction to create stream
     async createStreams() {
       if (this.channel) {
-        let uid = (this.uid = await this.RTCclient.join(
+        let uid = (this.uid = await client.join(
           this.appId,
           this.channel,
           this.token,
           null
         ));
-        this.RTCclient.on("user-published", this.handleUserJoined);
-        this.RTCclient.on("user-left", this.handleUserLeft);
-        this.RTCclient.on("liveStreamingStarted");
+        client.on("user-published", this.handleUserJoined);
+        client.on("user-left", this.handleUserLeft);
+        client.on("liveStreamingStarted");
 
         this.localTracks = await AgoraRTC.createMicrophoneAndCameraTracks();
-        await this.RTCclient.publish([
-          this.localTracks[0],
-          this.localTracks[1],
-        ]);
+        await client.publish([this.localTracks[0], this.localTracks[1]]);
         let player = `<div class="video-container" style="margin: 11px" id="user-container-${uid}">
                         <div class="video-player" style="width: 100%; height: 100%; object-fit: cover;" id="user-${uid}"></div>
                     </div>`;
@@ -102,7 +91,7 @@ export const RTC = defineStore({
         this.localTracks[i].close();
       }
       // to leave stream simply :>
-      await this.RTCclient.leave();
+      await client.leave();
       document.getElementById("stream-controls").style.display = "none";
       document.getElementById("video-streams").innerHTML = "";
     },
